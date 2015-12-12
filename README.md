@@ -4,7 +4,7 @@
 
 现在已知
 
-1st：有商品文件列表  itemlist.txt ，内容如下：
+1st：有商品文件列表  itemList.txt ，内容如下：
 ITEM000001:40
 ITEM000003:50
 ITEM000005:60
