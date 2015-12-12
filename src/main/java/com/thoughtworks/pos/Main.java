@@ -40,7 +40,7 @@ public class Main {
                 allInfoItem.put(item.getBarcode(), totalInfoItem);
             }
         }
-        //添加所有折扣信息
+        //添加所有折扣
         DiscountItemParser discountItemParser = new DiscountItemParser();
         List<DiscountItem> discountItems = discountItemParser.parse(ShopData.DISCOUNT_ITEMS);
         for (DiscountItem item : discountItems) {
@@ -66,6 +66,8 @@ public class Main {
                 }
             }
         }
+
+
         PosMachine posMachine = new PosMachine(allItems, allInfoItem, new PromotionManager(promotionMap));
         double total = posMachine.calculate(cartItems);
         System.out.println("总价:" + total);
